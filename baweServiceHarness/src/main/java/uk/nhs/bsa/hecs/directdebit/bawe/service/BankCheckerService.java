@@ -20,6 +20,7 @@ public class BankCheckerService implements IBankCheckerService
 	
 	BankAddress getValidBankAddress(String sortCode)
 	{
+		System.out.println("checking " + sortCode);
 		BankAddress details = new BankAddress();
 		details.setBranchName("Something group");
 		details.setBankAddress("Addr1, Addr2, Addr3, Addr4, Town, County, Postcode");
